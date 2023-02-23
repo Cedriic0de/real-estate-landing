@@ -5,12 +5,10 @@ This is a alternate design to the [Umthunzi Origins State](https://foce.co.za/de
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -23,12 +21,11 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop](preview-desktop.png)
-![Mobile Preview](preview-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Github Solution](https://github.com/Cedriic0de/real-estate-landing)
+- [Live Site](https://cedriic0de.github.io/real-estate-landing/)
 
 ### Built with
 

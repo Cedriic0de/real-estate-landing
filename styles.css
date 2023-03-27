@@ -11,7 +11,7 @@ html {
     
 }
 body{
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Archivo', "Montserrat" sans-serif;
 }
 ul{
     padding: 0;
@@ -133,7 +133,7 @@ button{
 .btn-block:hover{
     cursor: pointer;
     background: #101010;
-    border: 2px solid  #667b45;
+    border-color: #667b45;
 }
 /* Fact & Features */
 .facts-features{
@@ -302,12 +302,12 @@ button{
     background-color: #90a76d;
     color: #fff;
     border-radius: 8px;
+    transition: 0.42 transform;
 }
 .btn-prop:hover{
     background-color: #667b45;
     color: #101010;
-    transform: scale(1.5);
-    border: 1px solid #101010;
+    transform: scale(0.9);
 }
 
 /* Gallery */
@@ -352,7 +352,7 @@ button{
     border: 1px solid #101010 !important;
 }
 
-/* On Scroll Animation */
+/* On Scroll Effect */
 .card-trans {
     opacity: 0;
     transition: opacity 0.5s ease-out;
@@ -385,7 +385,6 @@ button{
    font-size: 1.5em;
    padding-top: 8px;
 }
-
 /* FOOTER */
 footer{
     text-align: center;
@@ -403,19 +402,29 @@ footer a:hover{
 
 
 /* Media Queries */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    header {
+        position: fixed;
+        top: 0;
+        background-color: #f2f2f2;
+        z-index: 1;
+        width: auto;
+    }
     .nav-menu {
         position: fixed;
         right: -100%;
-        top: 5rem;
+        top: 8rem;
         flex-direction: column;
-        background-color: #fff;
-        width: 100%;
+        background-color: #f2f2f2;
+        width: 80%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+    }
+    .nav-menu:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {
@@ -442,17 +451,24 @@ footer a:hover{
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(45deg);
     }
+
     .main-wrapper{
-        height: 100vh;
+        height: 120vh;
         display: flex;
         align-items: center;
-        justify-content: center;   
+        justify-content: center;  
+        text-align: center; 
+       
     }
     .main-content{
-        margin-top: 80px;
+        margin-top: 95px;
     }
+
     .facts-box{
         margin-bottom: 24px;
+    }
+    .prices-box {
+        gap: 5px;
     }
 
     .gallery-wrapper{
@@ -462,19 +478,13 @@ footer a:hover{
         align-items: center;
         justify-content: center;
     }
-    .gallery__image{
-        width: 100%;
-        height: auto;
-    }
     .gallery-wrapper img{
         width: 100%;
         height: auto;
-    }
-    .amenities-container{
-        flex-direction: column;
+        margin: auto;
     }
     .amenity{
-        width: auto;
+        width: 100%;
         height: auto;
         margin: 0px;
         padding: 14px;
